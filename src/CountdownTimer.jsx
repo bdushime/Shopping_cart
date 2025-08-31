@@ -14,7 +14,9 @@ export default function CountdownTimer() {
               setTime(prev=>prev-1)
             },1000)
         }
-    })
+
+        return ()=> clearInterval(timer)
+    },[isRunning,time])
 
 
     function handleReset() {
@@ -49,7 +51,7 @@ export default function CountdownTimer() {
         </button>
 
         <button
-          onClick={()=>handleReset}
+          onClick={()=>handleReset()}
           className="px-4 py-2 bg-red-500 text-white rounded-lg"
         >
           Reset
