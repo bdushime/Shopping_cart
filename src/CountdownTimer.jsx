@@ -49,7 +49,7 @@ export default function CountdownTimer() {
         </button>
 
         <button
-          onClick={}
+          onClick={()=>handleReset}
           className="px-4 py-2 bg-red-500 text-white rounded-lg"
         >
           Reset
