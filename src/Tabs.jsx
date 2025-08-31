@@ -11,7 +11,7 @@ export default function Tabs() {
         <button
           onClick={()=>setIsActive("Home")}
           className={`py-2 px-4 ${
-            activeTab === "Home" ? "text-green-500" : "text-gray-500"
+            isActive === "Home" ? "text-green-500" : "text-gray-500"
           }
             `}
         >
@@ -22,7 +22,7 @@ export default function Tabs() {
           
           onClick={()=>setIsActive("Profile")}
           className={`py-2 px-4 ${
-            activeTab === "Profile" ? "text-green-500" : "text-gray-500"
+            isActive === "Profile" ? "text-green-500" : "text-gray-500"
           }
             `}
         >
@@ -32,7 +32,7 @@ export default function Tabs() {
         <button
           onClick={()=>setIsActive("Settings")}
           className={`py-2 px-4 ${
-            activeTab === "Settings" ? "text-green-500" : "text-gray-500"
+            isActive === "Settings" ? "text-green-500" : "text-gray-500"
           }
             `}
         >
@@ -41,7 +41,9 @@ export default function Tabs() {
       </div>
 
       <div className="mt-6">
-       
+        {isActive === "Home" && <p>Welcome to my home</p>}
+        {isActive === "Profile" && <p>Welcome to my profile</p>}
+        {isActive === "Settings" && <p>Welcome to my settings</p>}
       </div>
     </div>
   );
