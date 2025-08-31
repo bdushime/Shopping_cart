@@ -6,6 +6,7 @@ import MenuItems from './MenuItems'
 import MenuItem from './MenuItem'
 import Input from './InputItem'
 import Tabs from './Tabs'
+import CountdownTimer from './CountdownTimer'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
        <MenuItem />
        <Input />
        <Tabs />
+       <CountdownTimer />
     </>
   )
 }
