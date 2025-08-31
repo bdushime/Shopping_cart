@@ -30,7 +30,7 @@ export default function Tabs() {
         </button>
 
         <button
-        
+          onClick={()=>setIsActive("Settings")}
           className={`py-2 px-4 ${
             activeTab === "Settings" ? "text-green-500" : "text-gray-500"
           }
