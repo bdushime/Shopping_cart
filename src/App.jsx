@@ -5,6 +5,7 @@ import './App.css'
 import MenuItems from './MenuItems'
 import MenuItem from './MenuItem'
 import Input from './InputItem'
+import Tabs from './Tabs'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
        {/* <MenuItems />     */}
        <MenuItem />
        <Input />
+       <Tabs />
     </>
   )
 }
